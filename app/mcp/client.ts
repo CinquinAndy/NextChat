@@ -51,5 +51,6 @@ export async function executeRequest(
   client: Client,
   request: McpRequestMessage,
 ) {
+  // @ts-expect-error - Type instantiation depth issue with zod 3.25
   return client.request(request, z.any());
 }
