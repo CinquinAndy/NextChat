@@ -453,7 +453,6 @@ export const KnowledgeCutOffDate: Record = {
   o1: "2023-10",
   "o3-mini-2025-01-31": "2023-10",
   "o3-mini": "2023-10",
-  "o1-2024-12-17": "2023-10",
   "gpt-4o-realtime-preview": "2023-10",
   "gpt-4o-realtime-preview-2024-12-17": "2023-10",
   // After improvements,
