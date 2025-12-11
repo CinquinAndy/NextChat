@@ -24,7 +24,7 @@ export class AudioHandler {
   }
 
   getByteFrequencyData() {
-    this.analyser.getByteFrequencyData(this.analyserData);
+    this.analyser.getByteFrequencyData(this.analyserData as Uint8Array<ArrayBuffer>);
     return this.analyserData;
   }
 
