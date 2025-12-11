@@ -424,7 +424,7 @@ export const SUMMARIZE_MODEL = "gpt-4o-mini";
 export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
 export const DEEPSEEK_SUMMARIZE_MODEL = "deepseek-chat";
 
-export const KnowledgeCutOffDate: Record<string, string> = {
+export const KnowledgeCutOffDate: Record = {
   default: "2021-09",
   "gpt-4-turbo": "2023-12",
   "gpt-4-turbo-2024-04-09": "2023-12",
@@ -453,6 +453,9 @@ export const KnowledgeCutOffDate: Record<string, string> = {
   o1: "2023-10",
   "o3-mini-2025-01-31": "2023-10",
   "o3-mini": "2023-10",
+  "o1-2024-12-17": "2023-10",
+  "gpt-4o-realtime-preview": "2023-10",
+  "gpt-4o-realtime-preview-2024-12-17": "2023-10",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
   "gemini-pro": "2023-12",
@@ -493,7 +496,7 @@ export const VISION_MODEL_REGEXES = [
   /o3/,
   /o4-mini/,
   /grok-4/i,
-  /gpt-5/
+  /gpt-5/,
 ];
 
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
@@ -539,6 +542,15 @@ const openaiModels = [
   "o3-mini",
   "o3",
   "o4-mini",
+  "o1-2024-12-17",
+  "gpt-4o-realtime-preview",
+  "gpt-4o-realtime-preview-2024-12-17",
+  "gpt-4o-audio-preview",
+  "gpt-4o-audio-preview-2024-12-17",
+  "gpt-4o-mini-audio-preview",
+  "gpt-4o-mini-audio-preview-2024-12-17",
+  "gpt-5.2-2025-12-11",
+  "gpt-5-nano",
 ];
 
 const googleModels = [
@@ -566,7 +578,13 @@ const googleModels = [
   "gemini-2.5-pro-preview-05-06",
   "gemini-2.5-flash-preview-04-17",
   "gemini-2.5-pro-preview-06-05",
-  "gemini-2.5-pro"
+  "gemini-2.5-pro",
+  "gemini-2.0-flash-001",
+  "gemini-2.0-flash-latest",
+  "gemini-2.5-flash-lite-preview-06-17",
+  "gemini-2.5-flash-preview-05-20",
+  "gemini-3-pro-preview",
+  "gemini-2.5-flash-lite",
 ];
 
 const anthropicModels = [
@@ -586,6 +604,12 @@ const anthropicModels = [
   "claude-3-7-sonnet-latest",
   "claude-sonnet-4-20250514",
   "claude-opus-4-20250514",
+  "claude-sonnet-4-5-20250929",
+  "claude-haiku-4-5-20251001",
+  "claude-opus-4-5-20251101",
+  "claude-sonnet-4-5",
+  "claude-haiku-4-5",
+  "claude-opus-4-5",
 ];
 
 const baiduModels = [
